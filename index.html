@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar Menu with Search Box </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="navbar-wrapper">
+    <nav>
+      <input type="checkbox" id="display-search">
+      <input type="checkbox" id="display-menu">
+      <label for="display-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="brand-name"><a href="#">Alt Coding</a></div>
+        <ul class="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="dropdown-link">
+              Product
+            </a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="dropdown-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">Sub <menu type="context"></menu></label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Vision</a></li>
+        </ul>
+      </div>
+      <label for="display-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="navbar-search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="enter-btn"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <div class="section-text">
+    <h2>Responsive Navbar Menu with Dropdown and Searchbox</h2>
+    
+  </div>
+</body>
+</html>
